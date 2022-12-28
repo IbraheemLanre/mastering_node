@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      var ev = new EventSource("/login");
+      ev.addEventListener("message", function (broadcast) {
+        console.log(broadcast);
+        document.getElementById("clock").innerHTML = broadcast.data;
+      });
+    </script>
+  </head>
+  <body>
+    <div id="clock"></div>
+  </body>
+</html>

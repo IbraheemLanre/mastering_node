@@ -1,0 +1,1 @@
+This code follows the textbook mastering_node by Sandro Pasquali. It is meant as a form of self-study by following the examples
